@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import "../App.css";
  import WeatherInfoComponent from "./WeatherInfoComponent";
 
 const WeatherIcons = {
@@ -18,56 +18,6 @@ const WeatherIcons = {
   "11d": "/icons/storm.svg",
   "11n": "/icons/storm.svg",
 };
-
-
-
-const Location = styled.span`
-  margin: 15px auto;
-  text-transform: capitalize;
-  font-size: 28px;
-  font-weight: bold;
-`;
-const Condition = styled.span`
-  margin: 20px auto;
-  text-transform: capitalize;
-  font-size: 14px;
-  & span {
-    font-size: 28px;
-  }
-`;
-const WeatherInfoLabel = styled.span`
-  margin: 20px 25px 10px;
-  text-transform: capitalize;
-  text-align: start;
-  width: 90%;
-  font-weight: bold;
-  font-size: 14px;
-`;
-const WeatherIcon = styled.img`
-  width: 100px;
-  height: 100px;
-  margin: 5px auto;
-`;
-const WeatherContainer = styled.div`
-  display: flex;
-  width: 100%;
-  margin: 30px auto;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const WeatherInfoContainer = styled.div`
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-`;
-
-
-
 
 const WeatherComponent = (props) => {
     const {weather} = props;
