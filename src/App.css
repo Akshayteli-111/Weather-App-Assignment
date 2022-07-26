@@ -90,6 +90,43 @@ img {
   font-size: 18px;
   font-weight: bold;
 }
+.Location span{
+  margin: 15px auto;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: bold;
+}
+.Condition span{
+ margin: 20px auto;
+  text-transform: capitalize;
+  font-size: 14px;
+  & span {
+    font-size: 28px;
+  }
+  
+  .WeatherInfoLabel span{
+      margin: 20px 25px 10px;
+  text-transform: capitalize;
+  text-align: start;
+  width: 90%;
+  font-weight: bold;
+  font-size: 14px;
+  }
+  .WeatherIcon img
+  {
+    width: 100px;
+  height: 100px;
+  margin: 5px auto;
+  }
+  .WeatherInfoContainer div{
+     display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+    
 
 @keyframes App-logo-spin {
   from {
